@@ -17,7 +17,7 @@ public class App {
         //task11();
         //task12();
         //task13();
-        //task14(5);
+        task14(5);
 
 
 
