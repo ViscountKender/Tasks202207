@@ -8,9 +8,9 @@
     <artifactId>Tasks</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <maven.compiler.sours>11</maven.compiler.sours>
-        <maven.compiler.target>11</maven.compiler.target>
-        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.sours>18</maven.compiler.sours>
+        <maven.compiler.target>18</maven.compiler.target>
+        <maven.compiler.source>18</maven.compiler.source>
 
     </properties>
 
