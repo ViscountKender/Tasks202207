@@ -26,16 +26,23 @@ public class Calculator {
 
         return work;
     }
-    public int div(){
-        int priv;
-        priv = num/num1;
-        return priv;
+//    public int div() {
+//        int priv;
+//        if (num1 == 0) {
+//            System.out.println("NaN");
+//        } else {
+//            priv = num / num1;
+//            return priv;
+//        }
+//    }
 
-    }
-    public boolean examination(){
+//    public boolean examination(int num1) {
+//        if (num1 == 0) {
+//            return false;
+//        }
+//
+//    }
 
-     return true;
-    }
 
     public int factorial(int num1){
         int result = 1;

@@ -9,14 +9,14 @@ public class Main {
 //        person.goWork();
         int result;
         Calculator calculator= new Calculator(1,8);
-       result = calculator.add();
-        System.out.println(result);
-        result = calculator.div();
-        System.out.println(result);
-        result = calculator.mul();
-        System.out.println(result);
-        result = calculator.sub();
-        System.out.println(result);
+//       result = calculator.add();
+//        System.out.println(result);
+//        result = calculator.div();
+//        System.out.println(result);
+//        result = calculator.mul();
+//        System.out.println(result);
+//        result = calculator.sub();
+//        System.out.println(result);
 
 
 
