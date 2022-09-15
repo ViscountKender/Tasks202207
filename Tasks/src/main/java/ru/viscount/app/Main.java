@@ -60,10 +60,9 @@ public class Main {
             if(max<= squares[i].size){
                 squares[i].size = max;
             }
-            System.out.println("Самый большой квадрат это: " + );
 
         }
-
+        System.out.println("Самый большой квадрат это: " );
 
 
 
