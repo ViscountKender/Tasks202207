@@ -9,13 +9,13 @@ public class Square {
         this.size = size;
     }
 
-    public int squareArea(int size){
+    public int squareArea(){
         return size * size;
     }
-    public int perimeterOfSquare(int size){
+    public int perimeterOfSquare(){
         return size * 4;
     }
-    public double diagonal(int size){
+    public double diagonal(){
         return size * Math.sqrt(2);
     }
 }

@@ -3,27 +3,27 @@ package ru.viscount.app;
 public class Main {
     public static void main(String[] args) {
         double sumProfi = 0;
-        Firma[] firma = {new Firma("Horns", 15,500),
-                new Firma("Hooves",25,900),
-                new Firma("Buy",8,1200),
-                new Firma("Sell",8,1600)};
+        Firm[] firm = {new Firm("Horns", 15,500),
+                new Firm("Hooves",25,900),
+                new Firm("Buy",8,1200),
+                new Firm("Sell",8,1600)};
 
-        for (Firma value : firma) {
+        for (Firm value : firm) {
 
             sumProfi = sumProfi + value.profit;
 
         }
-        System.out.println("Общая прибыль всех фирм: " + sumProfi);
+        System.out.println("Total profit firms: " + sumProfi);
 
         double sunEmployees = 0;
-        for (Firma value : firma) {
+        for (Firm value : firm) {
             sunEmployees = sunEmployees + value.numberOfEmployees;
 
         }
-        System.out.println("Общее количество работников: " + sunEmployees);
+        System.out.println("Total number of workers: " + sunEmployees);
         double averageSunEmployees;
-        averageSunEmployees = sunEmployees/firma.length;
-        System.out.println("Среднее количество работников: " + averageSunEmployees);
+        averageSunEmployees = sunEmployees/ firm.length;
+        System.out.println("Average number of workers: " + averageSunEmployees);
 
         Square square = new Square(5);
         Square square1 = new Square(6);
@@ -32,37 +32,52 @@ public class Main {
         Square square4 = new Square(8);
         Square[] squares ={square, square1, square2, square3, square4};
 
-        int biggestSquare = 0;
-        double squArea = 0;
-        double dioganol = 0;
+
+        double squArea ;
+        double dioganol ;
         double allSqr = 0;
-        double perimeter = 0;
-        double averagePerimeter = 0;
+        double perimeter ;
+        // double averagePerimeter = 0;
         for (Square value : squares) {
-            allSqr = allSqr + square.squareArea(value.size);
+            allSqr = allSqr + square.squareArea();
         }
 
-        System.out.println("общая площадь квадратов равна: " + allSqr);
+        System.out.println("Total area of the squares is: " + allSqr);
         double averageSqr = allSqr / squares.length;
-        System.out.println("Средняя площадь квадратов равна: " + averageSqr);
+        System.out.println("The average square area is: " + averageSqr);
 
         for (int i = 0; i < squares.length; i++) {
-            perimeter = square.perimeterOfSquare(squares[i].size);
-            squArea = square.squareArea(squares[i].size);
-            dioganol = square.diagonal(squares[i].size);
-            System.out.println("Диагональ равна: " + dioganol);
-            System.out.println("Площадь равна: " + squArea);
-            System.out.println("Периметр равен: " + perimeter);
+            perimeter = square.perimeterOfSquare();
+            squArea = square.squareArea();
+            dioganol = square.diagonal();
+            System.out.println("The diagonal is: " + dioganol);
+            System.out.println("The area is: " + squArea);
+            System.out.println("The perimeter is: " + perimeter);
 
         }
+        int max=0;
         for (int i = 0; i < squares.length; i++) {
-            int max=0;
+
             if(max<= squares[i].size){
-                squares[i].size = max;
+                max = squares[i].size ;
             }
 
         }
-        System.out.println("Самый большой квадрат это: " );
+        System.out.println("The biggest square is: " + max );
+
+        Printer printer = new Printer();
+        Document document = new Document("t", "a");
+        Document document1 = new Document("q", "w");
+        Document document2 = new Document("e", "ew");
+
+        printer.printDocument(document);
+        printer.printDocument(document1);
+        printer.printDocument(document2);
+
+
+
+
+
 
 
 
