@@ -1,4 +1,4 @@
-﻿package ru.viscount.app;
+package ru.viscount.app;
 
 public class Expander {
 

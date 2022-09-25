@@ -74,6 +74,13 @@ public class Main {
         printer.printDocument(document1);
         printer.printDocument(document2);
 
+        Box box = new Box(2,4,6);
+        box.volumeBoxes();
+
+        Expander exp = new Expander();
+        exp.expander(box);
+
+
 
 
 

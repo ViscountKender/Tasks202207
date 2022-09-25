@@ -1,4 +1,4 @@
-﻿package ru.viscount.app;
+package ru.viscount.app;
 
 public class Box {
     int width;
@@ -10,19 +10,14 @@ public class Box {
         height = h;
         depth = d;
     }
-    public double volumeBoxes(){
-        return width * height * depth;
-    }
+    Box box = new Box(2,4,6);
+    int volume;
 
-    public int getWidth() {
-        return width;
-    }
 
-    public int getHeight() {
-        return height;
-    }
+    public int volumeBoxes() {
+        return  width * height * depth;
 
-    public int getDepth() {
-        return depth;
     }
 }
+
+
