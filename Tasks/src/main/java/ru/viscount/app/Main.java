@@ -75,10 +75,16 @@ public class Main {
         printer.printDocument(document2);
 
         Box box = new Box(2,4,6);
-        box.volumeBoxes();
+       int volume = box.volumeBoxes();
+        System.out.println(volume);
 
         Expander exp = new Expander();
         exp.expander(box);
+        int newVolume = box.volumeBoxes();
+        System.out.println(newVolume);
+        int proportionalityOfVolumes = newVolume/volume;
+        System.out.println("The volume of the box has increased in: " + proportionalityOfVolumes + " times ");
+
 
 
 

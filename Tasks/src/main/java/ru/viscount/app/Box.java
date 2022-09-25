@@ -10,8 +10,7 @@ public class Box {
         height = h;
         depth = d;
     }
-    Box box = new Box(2,4,6);
-    int volume;
+
 
 
     public int volumeBoxes() {
