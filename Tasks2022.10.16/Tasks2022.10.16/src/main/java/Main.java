@@ -9,6 +9,9 @@ public class Main {
         System.out.println(employee4);
 
         Employee.Summary();
+        int [] array ={3,5,8,1,3,33,45};
+        int d = MathUtils.spacingBetweenElements(array);
+        System.out.println(d);
 
 
     }
