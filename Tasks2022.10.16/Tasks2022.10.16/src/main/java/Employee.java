@@ -1,6 +1,5 @@
 public class Employee {
     static final int DEFAULT_AGE = 18;
-    //static int COUNT_OBJECTS;
     static int countMen0;
     static int countMen1;
     static int countMen2;
@@ -61,19 +60,19 @@ public class Employee {
                 + ", gender: " + gender
                 + ')';
     }
-    public static int Count(){
+    public static int count(){
         return  count0 + count1 + count2;
     }
-    public static int CountMen(){
+    public static int countMen(){
         return countMen0 + countMen1 + countMen2;
     }
-    public static int CountWomen(){
+    public static int countWomen(){
         return countWomen0 + countWomen1 + countWomen2;
     }
-    public static void  Summary(){
-        int countObjects = Count();
-        int  countMen = CountMen();
-        int countWomen = CountWomen();
+    public static void  summary(){
+        int countObjects = count();
+        int  countMen = countMen();
+        int countWomen = countWomen();
         System.out.println( "Total employees: " + countObjects + ","+ " Men: " + countMen + "," + " Women: " + countWomen );
 
 

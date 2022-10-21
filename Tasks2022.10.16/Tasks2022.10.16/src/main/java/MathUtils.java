@@ -1,6 +1,7 @@
 public class MathUtils {
-    public static void arraySum(){
-        int array[] = {3,6,8,7,1,0};
+    int array[] = {3,6,8,7,1,0};
+    public static void arraySum(int array[]){
+
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
             sum += array[i];
@@ -9,27 +10,26 @@ public class MathUtils {
 
 
     }
-    public static int arrayMean(){
-        int array[] = {0,21,54,11,2};
+    public static int arrayMean(int array[]){
+
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
             sum += array[i];
         }
         return sum/array.length;
     }
-    public static int numberOfElements(int a, int b){
+    public static int numberOfElements(int a, int b,int array[]){
 
-        int[] array = {0,2,5,4,8,4,10,20,21,30};
         int count =0;
         for (int i = 0; i < array.length; i++) {
-            if(a <= array[i] & b >= array[i] ){
+            if(a <= array[i] && b >= array[i] ){
                 count++;
 
             }
         }
         return count;
     }
-    public static int spacingBetweenElements(int[] array){
+    public static int lengthBetweenElements(int[] array){
         int max = array[0];
         int min = array[0];
         int maxIndex = 0;

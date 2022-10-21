@@ -8,9 +8,9 @@ public class Main {
 
         System.out.println(employee4);
 
-        Employee.Summary();
+        Employee.summary();
         int [] array ={3,5,8,1,3,33,45};
-        int d = MathUtils.spacingBetweenElements(array);
+        int d = MathUtils.lengthBetweenElements(array);
         System.out.println(d);
 
         Car car = new Car("Ford",1999,"Bob",15);
