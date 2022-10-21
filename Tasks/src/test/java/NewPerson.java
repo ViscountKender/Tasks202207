@@ -14,8 +14,8 @@ public class NewPerson {
         this.namePerson = namePerson;
     }
     String newNamePerson;
-    public void NewRename(String newNamePerson){
-        namePerson = newNamePerson;
+    public void newRename(String newNamePerson){
+        this.namePerson = newNamePerson;
 
     }
 

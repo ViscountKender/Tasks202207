@@ -9,8 +9,7 @@ public class StillPerson {
 
 
 
-//    int newAge;
-//    String newName;
+
     public StillPerson creatingNewPersona(int newAge,String newName){
         age = newAge;
         name = newName;
