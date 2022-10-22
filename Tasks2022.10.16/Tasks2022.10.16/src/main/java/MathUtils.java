@@ -29,12 +29,12 @@ public class MathUtils {
         }
         return count;
     }
-    public static int lengthBetweenElements(int[] array){
+    public static int lengthBetweenMinAndMaxElements(int[] array){
         int max = array[0];
         int min = array[0];
         int maxIndex = 0;
         int minIndex= 0;
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 1; i < array.length; i++) {
             int countMax = array[i];
             if(max < countMax){
                 max = countMax;

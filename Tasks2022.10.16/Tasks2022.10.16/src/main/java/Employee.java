@@ -1,15 +1,9 @@
 public class Employee {
     static final int DEFAULT_AGE = 18;
-    static int countMen0;
-    static int countMen1;
-    static int countMen2;
-    static int countWomen0;
-    static int countWomen1;
-    static int countWomen2;
+    static int countMen;
+    static int countWomen;
+    static int count;
 
-    static int count0;
-    static int count1;
-    static int count2;
 
 
 
@@ -18,13 +12,8 @@ public class Employee {
     String gender;
     public Employee() {
         this.age = DEFAULT_AGE;
-        count0++;
-        if (gender.equalsIgnoreCase("m")) {
-            countMen0++;
+        count++;
 
-        }else{
-            countWomen0 ++;
-        }
     }
 
 
@@ -32,12 +21,12 @@ public class Employee {
         this.name = name;
         this.age = age;
         this.gender = gender;
-        count1 ++;
+        count ++;
         if (gender.equalsIgnoreCase("m")) {
-            countMen1++;
+            countMen++;
 
         }else{
-            countWomen1 ++;
+            countWomen ++;
         }
     }
 
@@ -45,12 +34,12 @@ public class Employee {
         this.name = name;
         this.gender = gender;
         this.age = DEFAULT_AGE;
-        count2 ++;
+        count ++;
         if (gender.equalsIgnoreCase("m")) {
-            countMen2++;
+            countMen++;
 
         }else{
-            countWomen2 ++;
+            countWomen ++;
         }
     }
     public String toString() {
@@ -60,20 +49,10 @@ public class Employee {
                 + ", gender: " + gender
                 + ')';
     }
-    public static int count(){
-        return  count0 + count1 + count2;
-    }
-    public static int countMen(){
-        return countMen0 + countMen1 + countMen2;
-    }
-    public static int countWomen(){
-        return countWomen0 + countWomen1 + countWomen2;
-    }
-    public static void  summary(){
-        int countObjects = count();
-        int  countMen = countMen();
-        int countWomen = countWomen();
-        System.out.println( "Total employees: " + countObjects + ","+ " Men: " + countMen + "," + " Women: " + countWomen );
+
+       public static void  summary(){
+
+        System.out.println( "Total employees: " + count + ","+ " Men: " + countMen + "," + " Women: " + countWomen );
 
 
     }

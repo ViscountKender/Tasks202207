@@ -9,8 +9,8 @@ public class Main {
         System.out.println(employee4);
 
         Employee.summary();
-        int [] array ={3,5,8,1,3,33,45};
-        int d = MathUtils.lengthBetweenElements(array);
+        int [] array ={45,5,8,1,3,33};
+        int d = MathUtils.lengthBetweenMinAndMaxElements(array);
         System.out.println(d);
 
         Car car = new Car("Ford",1999,"Bob",15);
