@@ -1,5 +1,5 @@
 public class MathUtils {
-    int array[] = {3,6,8,7,1,0};
+
     public static void arraySum(int array[]){
 
         int sum = 0;

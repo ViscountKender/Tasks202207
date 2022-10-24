@@ -1,24 +1,25 @@
 public class Car {
-    final String model;
+   static final int CITY_LIMIT = 60;
+    static final int YARD_LIMIT = 20;
+    final String MODEL;
     final int year;
     String owner;
     int currentSpeed;
-    int cityLimit = 60;
-    int yardLimit = 20;
 
-    public Car(String model, int year, String master, int currentSpeed) {
-        this.model = model;
+
+    public Car(String MODEL, int year, String master, int currentSpeed) {
+        this.MODEL = MODEL;
         this.year = year;
         this.owner = master;
         this.currentSpeed = currentSpeed;
     }
 
-    public Car(String model, int year) {
-        this.model = model;
+    public Car(String MODEL, int year) {
+        this.MODEL = MODEL;
         this.year = year;
     }
     public void driveCity(){
-        if (currentSpeed <= cityLimit){
+        if (currentSpeed <= CITY_LIMIT){
             System.out.println("Car is drive");
         } else {
             System.out.println("Car isn't drive");
@@ -26,7 +27,7 @@ public class Car {
 
     }
     public void driveLivingSector(){
-        if(currentSpeed <=yardLimit){
+        if(currentSpeed <= YARD_LIMIT){
             System.out.println("Car is drive");
         } else {
             System.out.println("Car isn't drive");

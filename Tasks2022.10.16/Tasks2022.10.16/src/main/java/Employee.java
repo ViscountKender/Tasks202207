@@ -4,9 +4,6 @@ public class Employee {
     static int countWomen;
     static int count;
 
-
-
-
     String name;
     int age;
     String gender;
