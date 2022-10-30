@@ -11,9 +11,8 @@ public class Main {
         employee.setWorkExperience(employee.getWorkExperience() + 2);
         System.out.println("Name: " + employee.getName() +  "," + " Age: " + employee.getAge() +  ","
                 + " Work experience: " + employee.getWorkExperience());
-
-
-
+        Car car = new Car("black","Ford",220);
+        car.driveByCar();
 
 
     }
