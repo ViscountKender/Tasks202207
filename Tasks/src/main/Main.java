@@ -13,6 +13,9 @@ public class Main {
                 + " Work experience: " + employee.getWorkExperience());
         Car car = new Car("black","Ford",220);
         car.driveByCar();
+        BankAccount bankAccount = new BankAccount();
+        bankAccount.replenishBalance(9500);
+
 
 
     }
