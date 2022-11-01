@@ -18,11 +18,13 @@ public class BankAccount {
         return depositAccount;
     }
 
+    // Проверка баланса
         public void checkBalance(){
         System.out.println("Your balance: " + depositAccount);
 
     }
-    public double replenishBalance(double replenishmentAmount){
+    // Метод пополнения баланса
+    public void replenishBalance(double replenishmentAmount){
         if(replenishmentAmount < MIN_DEPOSIT_AMOUNT){
             replenishmentAmount = replenishmentAmount - replenishmentAmount * ACCOUNT_REPLENISHMENT_COMMISSION;
         }
@@ -30,9 +32,10 @@ public class BankAccount {
 
         System.out.println("You topped up the balance in the amount: " + replenishmentAmount);
 
-        return depositAccount;
+
     }
-    public double withdrawMoney(double replenishmentAmount){
+    // Метод снятия денег
+    public void withdrawMoney(double replenishmentAmount){
         if(individual = true){
             replenishmentAmount = replenishmentAmount - replenishmentAmount * INDIVIDUAL_COMMISSION;
         }else {
@@ -40,10 +43,11 @@ public class BankAccount {
         }
         System.out.println("Take money : " + replenishmentAmount);
         depositAccount = depositAccount - replenishmentAmount;
-        return depositAccount;
-    }
 
-    public double transferMoneyAnotherBank(double transferAmount) {
+    }
+    // Метод перевода денег в другой банк
+
+    public void transferMoneyAnotherBank(double transferAmount) {
         double checkDeposit = depositAccount - transferAmount;
         if (transferAmount >= MIN_TRANSFER_SUM && checkDeposit  >= 0) {
             depositAccount = depositAccount - transferAmount;
@@ -56,7 +60,7 @@ public class BankAccount {
             System.out.println("Bank transfer was not made");
 
         }
-        return depositAccount;
+
 
     }
 }
