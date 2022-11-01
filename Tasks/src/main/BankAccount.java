@@ -6,9 +6,11 @@ public class BankAccount {
    final double COMMISSION_LEGAL_ENTITY = 0.15;
    final double MIN_TRANSFER_SUM = 1000;
    private boolean individual;
+   private double depositAccount;
 
-    public boolean isIndividual() {
-        return individual;
+   public BankAccount(boolean individual, double depositAccount) {
+        this.individual = individual;
+
     }
 
     public double getDepositAccount() {
@@ -23,15 +25,9 @@ public class BankAccount {
         this.depositAccount = depositAccount;
     }
 
-    private double depositAccount;
-
-    public BankAccount(boolean individual, double depositAccount) {
-        this.individual = individual;
-        this.depositAccount = depositAccount;
-    }
-
 
     public double checkBalance(){
+        System.out.println("Your balance: " + depositAccount);
 
       return depositAccount;
 
@@ -42,10 +38,9 @@ public class BankAccount {
         }
         depositAccount = depositAccount + replenishmentAmount;
 
-        System.out.println("You topped up the balance in the amount: " + replenishmentAmount +
-                "on your account: " + depositAccount);
+        System.out.println("You topped up the balance in the amount: " + replenishmentAmount);
 
-        return replenishmentAmount;
+        return depositAccount;
     }
     public double withdrawMoney(double replenishmentAmount){
         if(individual = true){
@@ -53,11 +48,12 @@ public class BankAccount {
         }else {
             replenishmentAmount = replenishmentAmount - replenishmentAmount * COMMISSION_LEGAL_ENTITY;
         }
-        System.out.println("Take money");
-        return replenishmentAmount;
+        System.out.println("Take money : " + replenishmentAmount);
+        depositAccount = depositAccount - replenishmentAmount;
+        return depositAccount;
     }
 
-    public double transferMoneyAnotherBank(int transferAmount) {
+    public double transferMoneyAnotherBank(double transferAmount) {
         double depositAccount = checkBalance();
         if (transferAmount >= MIN_TRANSFER_SUM && (depositAccount - transferAmount) >= 0) {
             depositAccount = depositAccount - transferAmount;
@@ -65,8 +61,13 @@ public class BankAccount {
             System.out.println("Transfer money to another bank: " + transferAmount);
 
         }
+//        else {
+//            System.out.println("Bank transfer was not made");
+
+
         return depositAccount;
 
-    }
+       // }
 
+    }
 }

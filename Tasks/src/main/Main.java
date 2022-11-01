@@ -13,8 +13,12 @@ public class Main {
                 + " Work experience: " + employee.getWorkExperience());
         Car car = new Car("black","Ford",220);
         car.driveByCar();
-        BankAccount bankAccount = new BankAccount(true,50000);
+        BankAccount bankAccount = new BankAccount(true,500000);
         bankAccount.replenishBalance(9500);
+        bankAccount.transferMoneyAnotherBank(10000);
+        bankAccount.withdrawMoney(200.55);
+        bankAccount.checkBalance();
+
 
 
 
