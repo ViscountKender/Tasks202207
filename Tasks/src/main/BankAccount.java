@@ -10,6 +10,7 @@ public class BankAccount {
 
    public BankAccount(boolean individual, double depositAccount) {
         this.individual = individual;
+        this.depositAccount = depositAccount;
 
     }
 
@@ -17,19 +18,8 @@ public class BankAccount {
         return depositAccount;
     }
 
-    public void setIndividual(boolean individual) {
-        this.individual = individual;
-    }
-
-    public void setDepositAccount(double depositAccount) {
-        this.depositAccount = depositAccount;
-    }
-
-
-    public double checkBalance(){
+        public void checkBalance(){
         System.out.println("Your balance: " + depositAccount);
-
-      return depositAccount;
 
     }
     public double replenishBalance(double replenishmentAmount){
@@ -54,20 +44,19 @@ public class BankAccount {
     }
 
     public double transferMoneyAnotherBank(double transferAmount) {
-        double depositAccount = checkBalance();
-        if (transferAmount >= MIN_TRANSFER_SUM && (depositAccount - transferAmount) >= 0) {
+        double checkDeposit = depositAccount - transferAmount;
+        if (transferAmount >= MIN_TRANSFER_SUM && checkDeposit  >= 0) {
             depositAccount = depositAccount - transferAmount;
 
             System.out.println("Transfer money to another bank: " + transferAmount);
 
+
         }
-//        else {
-//            System.out.println("Bank transfer was not made");
+        else {
+            System.out.println("Bank transfer was not made");
 
-
+        }
         return depositAccount;
-
-       // }
 
     }
 }
