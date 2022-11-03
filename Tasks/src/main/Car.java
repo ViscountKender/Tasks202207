@@ -9,16 +9,13 @@ public class Car {
         this.maxSpeed = maxSpeed;
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public String getBrand() {
-        return brand;
-    }
-
-    public int getMaxSpeed() {
-        return maxSpeed;
+    public void driveCar(){
+        turnOn();
+        startEngine();
+        pushAccelerator();
+        pushBrake();
+        turnOff();
+        stopEngine();
     }
     private void turnOn(){
         System.out.println("Car is starting");
@@ -26,24 +23,17 @@ public class Car {
     private void startEngine(){
         System.out.println("Engine is starting");
     }
-    private void pushOnAccelerator(){
+    private void pushAccelerator(){
         System.out.println("Accelerator pedal pressed");
     }
-    private void pushOnBrake(){
+    private void pushBrake(){
         System.out.println("Brake pedal pressed");
     }
-    private void turnOf(){
+    private void turnOff(){
         System.out.println("Car is stopped");
     }
     private void stopEngine(){
         System.out.println("Engine is stopped");
     }
-    public void driveByCar(){
-        turnOn();
-        startEngine();
-        pushOnAccelerator();
-        pushOnBrake();
-        turnOf();
-        stopEngine();
-    }
 }
+
