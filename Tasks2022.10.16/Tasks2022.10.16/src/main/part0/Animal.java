@@ -1,4 +1,4 @@
-﻿package part0;
+package part0;
 
 public class Animal {
     String name;
