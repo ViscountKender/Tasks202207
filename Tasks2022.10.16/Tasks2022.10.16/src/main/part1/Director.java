@@ -1,6 +1,6 @@
 package part1;
 
-public class Director extends HRDirector {
+public class Director extends SeniorOfficer {
 
 
 }

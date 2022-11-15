@@ -1,5 +1,5 @@
 package part1;
 
-public class  Trainee extends Person {
+public class  Trainee extends Employee {
 
 }

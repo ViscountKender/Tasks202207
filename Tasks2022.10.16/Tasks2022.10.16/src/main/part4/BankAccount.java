@@ -1,7 +1,7 @@
 package part4;
 
 public class BankAccount {
-    private double deposit = 0;
+    private double deposit ;
 
     // метод снятия денег со счета
 
