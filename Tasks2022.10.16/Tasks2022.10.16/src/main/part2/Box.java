@@ -1,6 +1,6 @@
 package part2;
 
-public class Box extends SquareBox {
+public class Box extends Container {
     private int height;
     private int width;
 
