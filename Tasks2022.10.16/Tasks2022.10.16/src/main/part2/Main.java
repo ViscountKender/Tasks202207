@@ -6,9 +6,8 @@ public class Main {
         Box[] boxes = {new Box(2,5,1),new Box(20,2,1),
                 new Box(6,1,1)};
 
-        int volume = box.volume(box);
-        System.out.println(volume);
-        System.out.println();
+         box.volume(box);
+         System.out.println();
         Container.info(box);
         System.out.println();
         int totalVolume = Container.volumeBoxes(boxes);
